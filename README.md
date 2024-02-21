@@ -27,7 +27,7 @@ I modularized the app into routes, controllers, and services to create a flexibl
 
 For example, if I want to refine the request-handling logic of an endpoint to catch more invalid requests, I can modify the corresponding controller. Similarly, if I want to change the core logic of how we update users, I can edit the corresponding function in the UserService.
 
-Also, modularizing the app would allow for more focused testing. Unit tests can be developed to target specifically controllers, services, etc. (Assume that tests would be created in the future, I ran out of time to create tests for now 🤡).
+Also, modularizing the app would allow for more focused testing. Unit tests can be developed to target specifically controllers, services, etc. (Assume tests would be created in the future, I ran out of time to create tests for now 🤡).
 
 #### <b>Why did I choose to use Sequelize?</b>
 I used Sequelize as an ORM in this app because it abstracted away the need to write raw SQL when interacting with the database. For example, Sequelize provides a migration feature that allows me to define the database using Javascript files (instead of needing to manually run SQL scripts).

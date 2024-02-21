@@ -67,7 +67,7 @@ Sample Response:
             }
         ]
     },
-    …
+    ...
 ]
 ```
 <br/>
@@ -187,7 +187,7 @@ Sample Response:
         "skill": "Bokeh",
         "frequency": 30
     },
-    …
+    ...
 ]
 ```
 <br/>
@@ -214,7 +214,7 @@ Sample Response:
         "serial": "H0004",
         "owner": "Joe Biden"
     },
-    …
+    ...
 ]
 ```
 <br/>

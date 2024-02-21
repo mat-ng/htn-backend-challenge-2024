@@ -40,7 +40,7 @@ Additionally, I used Sequelize because of its protection against SQL injections.
 `GET /users/`<br/>
 <i>Returns `name`, `company`, `email`, `phone`, `skills`, and `hardware` information for all users.</i><br/>
 Sample Response:
-```json
+```
 [
     {
         "id": "d19c7a40-1472-45c6-a28c-2638d1221c58",
@@ -78,7 +78,7 @@ Sample Response:
 Throws a Bad Request if the input is an invalid UUID.<br/>
 Throws an error if no user is found with that `id`.</i><br/>
 Sample Response:
-```json
+```
 {
     "id": "576e0d5f-ebec-4cb0-b54b-1cbbb418b28d",
     "name": "Andrew Stark",
@@ -113,7 +113,7 @@ Sample Response:
 Throws a Bad Request if the payload is empty/contains fields other than `name`, `company`, `email`, `phone` and/or `skills`.<br/>
 Skills that do not exist in the `Skills` table will not be added.</i><br/>
 Sample Body:
-```json
+```
 {
     "name": "Joe Biden",
     "company": "Google",
@@ -131,7 +131,7 @@ Sample Body:
 ```
 
 Sample Response:
-```json
+```
 {
     "id": "576e0d5f-ebec-4cb0-b54b-1cbbb418b28d",
     "name": "Joe Biden",
@@ -169,7 +169,7 @@ Sample Response:
 <i>Returns skills with frequencies ranging from `min_frequency` to `max_frequency`, inclusive.<br/>
 Throws a Bad Request if an empty/invalid `min_frequency` or `max_frequency` is provided.</i><br/>
 Sample Response:
-```json
+```
 [
     {
         "skill": "Common Lisp",
@@ -196,7 +196,7 @@ Sample Response:
 `GET /hardwares/`<br/>
 <i>Returns `serial` and owner name information for all hardware.</i><br/>
 Sample Response:
-```json
+```
 [
     {
         "serial": "H0001",
@@ -225,7 +225,7 @@ Sample Response:
 Throws a Bad Request if the input is an invalid UUID.<br/>
 Throws an error if no user is found with that `id`.</i><br/>
 Sample Response:
-```json
+```
 [
     {
         "serial": "H0003",
@@ -245,13 +245,13 @@ Sample Response:
 Throws a Bad Request if the payload is empty/contains fields other than `serial`.<br/>
 Will not check out if the hardware `serial` is already owned by a user.</i><br/>
 Sample Body:
-```json
+```
 {
     "serial": "H0005"
 }
 ```
 Sample Response:
-```json
+```
 {
     "id": "bc5ecf2a-b405-45a5-87de-91990b3b4449",
     "serial": "H0005",
@@ -267,13 +267,13 @@ Sample Response:
 <i>Deletes hardware from database.<br/>
 Throws a Bad Request if the payload is empty/contains fields other than `serial`.</i><br/>
 Sample Body:
-```json
+```
 {
     "serial": "H0005"
 }
 ```
 Sample Response:
-```json
+```
 The hardware H0005 has been returned successfully!
 ```
 

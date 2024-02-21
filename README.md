@@ -281,4 +281,4 @@ The hardware H0005 has been returned successfully!
 - Caching mechanisms can be implemented to reduce database load and improve performance. For example, the response for getting all users' informations could be cached to avoid querying the database every time. We could define a caching strategy that refreshes the cache if the API updates a user, checks out hardware, or returns hardware.
 - Unit tests for the individual services could be helpful, so that we can test their logic and edge cases. Integration and e2e tests could also be implemented to make sure components (e.g. controllers, services) are working together and the overall app is functioning as expected.
 
-Thanks for taking the time to review this submission, appreciate it 🙏,
+Thanks for taking the time to review this submission, appreciate it 🙏

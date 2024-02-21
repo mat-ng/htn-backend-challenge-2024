@@ -8,7 +8,6 @@ The app uses the following tech stack:
 - Node
 - Docker
 
-<br/>
 
 # Database Schema
 <img src='./public/databaseDiagram.png' alt='Entity Relationship Diagram of Database'>

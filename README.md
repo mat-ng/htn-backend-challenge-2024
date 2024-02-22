@@ -8,6 +8,20 @@ The app uses the following tech stack:
 - Node
 - Docker
 
+# Deployment
+
+The application was deployed using Google Cloud (GKE), and can be accessed at http://34.72.42.192!
+
+Alternatively, if you want to run the application locally — you can clone this repo, then build and run it with Docker:
+
+```
+docker-compose up --build
+```
+
+#### <b>Why did I Docker to build and run the application?</b>
+I used Docker because it made deployment to Google Cloud easy and straightforward. I simply had to create a Docker image locally, push it to Docker Hub — then I could configure my Google Cloud application to pull that Docker image and deploy it with GKE.
+
+It also ensures consistency between your system and my own, since I can encapsulate my app into a container image that will run identically on any system without the risk of environment-specific issues.
 
 # Database Schema
 <img src='./public/databaseDiagram.png' alt='Entity Relationship Diagram of Database'>
@@ -19,7 +33,6 @@ This also decouples the concerns of users, skills, and their associations in sep
 
 #### <b>Why did I use a one-to-many relationship between users and hardware?</b>
 I recognized that users can borrow multiple hardware. However, unlike skills, I assumed a piece of hardware can only be owned by one user at a time. As such, I used a one-to-many relationship between users and hardware, where there is a foreign key relationship between the `Users` table's `id` column and the `Hardware` table's `userId` column. Altogether, this ensures that each piece of hardware is associated with only one user and prevents conflicts in hardware ownership.
-
 
 # Development
 #### <b> Why did I choose to split the application logic into routes, controllers, and services?</b>

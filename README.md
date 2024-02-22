@@ -12,7 +12,7 @@ The app uses the following tech stack:
 
 # Deployment
 
-The application was deployed using Google Cloud (GKE), and is hosted at http://34.72.42.192! Be sure to append a valid path, such as /users/ or /skills/, to access specific functionalities of the app.
+The application was deployed using Google Cloud (GKE), and is hosted at http://34.72.42.192. Be sure to append a valid path, such as `/users/` or `/skills/`, to access specific functionalities of the app.
 
 Alternatively, if you want to run the application locally — you can clone this repo, then build and run it with Docker (it should be running at http://localhost:3000):
 

@@ -25,7 +25,7 @@ I used Docker because it made deployment to Google Cloud easy and straightforwar
 
 It also ensures consistency between your system and my own, since I can encapsulate my app into a container image that will run identically on any system without the risk of environment-specific issues.
 
-#### <b>Why did I use GKE to deploy the application</b>
+#### <b>Why GKE?</b>
 I chose GKE because of its scalability. Since I can simply add or remove container instances of the app across the VM cluster managed by Google Cloud, I can scale the app horizontally in response to increased traffic (e.g. more users wanted to update their profile simultaneously, more users wanted to check out hardware simultaneously, etc.).
 
 # Database Schema

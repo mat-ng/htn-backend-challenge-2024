@@ -23,7 +23,7 @@ docker-compose up --build
 #### <b>Why did I use Docker to build and run the application?</b>
 I used Docker because it made deployment to Google Cloud easy and straightforward. I simply had to create a Docker image locally, push it to Docker Hub — then I could configure my Google Cloud application to pull that Docker image and deploy it with GKE.
 
-It also ensures consistency between your system and my own, since I can encapsulate my app into a container image that will run identically on any system without the risk of environment-specific issues.
+It also ensures consistency between your system and my own when running the app locally, since I can encapsulate my app into a container image that will run identically on any system without the risk of environment-specific issues.
 
 #### <b>Why did I choose GKE to deploy the application?</b>
 I chose GKE because of its scalability. Since I can simply add or remove container instances of the app across the VM cluster managed by Google Cloud, I can easily scale the app horizontally in response to increased traffic (e.g. more users wanted to update their profile simultaneously, more users wanted to check out hardware simultaneously, etc.).

@@ -296,7 +296,7 @@ The hardware H0005 has been returned successfully!
 
 # Future Roadmap
 - Caching mechanisms can be implemented to reduce database load and improve performance. For example, the response for getting all users' informations could be cached to avoid querying the database every time. We could define a caching strategy that refreshes the cache if the API updates a user, checks out hardware, or returns hardware.
-- A SQL table view could be added that predefines the joins between the `Users`, `Skills`, and `Hardware` tables. This would eliminate the need to construct complex queries that join these tables everytime we get users' data. Instead, we could construct simple queries from this table view — and update it only when there are changes made to the `Users`, `Skills`, and `Hardware` tables.
+- A SQL table view could be added that predefines the joins between the `Users`, `Skills`, and `Hardware` tables. This would eliminate the need to construct complex queries that join these tables every time we retrieve users' data. Instead, we could use simple queries from this table view — and update the view only when data in the `Users`, `Skills`, and `Hardware` tables is modified.
 - Unit tests for the individual services could be helpful, so that we can test their logic and edge cases. Integration and e2e tests could also be implemented to make sure components (e.g. controllers, services) are working together and the overall app is functioning as expected.
 
 Thanks for taking the time to review this submission, appreciate it 🙏

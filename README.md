@@ -4,9 +4,11 @@ This is my submission for the [Hack The North 2024 Backend Challenge](https://gi
 The app uses the following tech stack:
 - SQLite
 - Sequelize ORM
+- Google Cloud
 - Express
 - Node
 - Docker
+- Kubernetes
 
 # Deployment
 
@@ -22,6 +24,9 @@ docker-compose up --build
 I used Docker because it made deployment to Google Cloud easy and straightforward. I simply had to create a Docker image locally, push it to Docker Hub — then I could configure my Google Cloud application to pull that Docker image and deploy it with GKE.
 
 It also ensures consistency between your system and my own, since I can encapsulate my app into a container image that will run identically on any system without the risk of environment-specific issues.
+
+#### <b>Why did I use GKE to deploy the application</b>
+I chose GKE because of its scalability. Since I can simply add or remove container instances of the app across the VM cluster managed by Google Cloud, I can scale the app horizontally in response to increased traffic (e.g. more users wanted to update their profile simultaneously, more users wanted to check out hardware simultaneously, etc.).
 
 # Database Schema
 <img src='./public/databaseDiagram.png' alt='Entity Relationship Diagram of Database'>

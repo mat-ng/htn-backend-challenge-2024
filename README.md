@@ -18,7 +18,7 @@ Alternatively, if you want to run the application locally — you can clone this
 docker-compose up --build
 ```
 
-#### <b>Why did I Docker to build and run the application?</b>
+#### <b>Why did I use Docker to build and run the application?</b>
 I used Docker because it made deployment to Google Cloud easy and straightforward. I simply had to create a Docker image locally, push it to Docker Hub — then I could configure my Google Cloud application to pull that Docker image and deploy it with GKE.
 
 It also ensures consistency between your system and my own, since I can encapsulate my app into a container image that will run identically on any system without the risk of environment-specific issues.

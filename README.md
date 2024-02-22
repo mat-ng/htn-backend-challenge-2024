@@ -14,7 +14,7 @@ The app uses the following tech stack:
 
 The application was deployed using Google Cloud (GKE), and is hosted at http://34.72.42.192!
 
-Alternatively, if you want to run the application locally — you can clone this repo, then build and run it with Docker (it should be running at http://localhost:3000):
+Alternatively, if you want to run the application locally — you can clone this repo, then build and run it with Docker (by default, it should be running at http://localhost:3000):
 
 ```
 docker-compose up --build
